@@ -1,0 +1,41 @@
+{
+  "name": "ego-admin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite --port 5174",
+    "build": "vite build",
+    "preview": "vite preview --port 5174",
+    "test:core": "node src/core/test/core.test.js",
+    "test:services": "node src/services/test/services.test.js",
+    "test": "node src/core/test/core.test.js && node src/services/test/services.test.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.112.3",
+    "@tanstack/react-query": "^5.104.2",
+    "antd": "^6.6.6",
+    "clsx": "^2.1.1",
+    "framer-motion": "^6.5.1",
+    "lucide-react": "^1.31.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.5",
+    "react-hot-toast": "^2.6.0",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.30.0",
+    "recharts": "^3.4.1",
+    "tailwind-merge": "^3.4.0",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.4.6",
+    "vite": "^4.4.0"
+  }
+}
